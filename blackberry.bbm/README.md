@@ -21,6 +21,21 @@ For detailed information on configuring the BlackBerry 10 WebWorks SDK and your 
 please refer to our [WebWorks documentation](https://developer.blackberry.com/html5/documentation/using_javascript_libraries_frameworks_in_webworks.html)
 for Construct 2.
 
+#### Post-Export
+
+After you export your Construct 2 project with the BlackBerry 10 exporter, you will need to ensure
+that you have enabled the following in your **config.xml** file that is generated during the export.
+
+**Features**
+
+    <feature id="blackberry.bbm.platform" />
+
+**Permissions**
+
+    <rim:permissions>
+        <rim:permit>bbm_connect</rim:permit>
+    </rim:permissions>
+
 ## Usage
 
 #### Installation
