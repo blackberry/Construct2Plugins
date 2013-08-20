@@ -1,22 +1,6 @@
 blackberry10
 ====================
 
-This plugin is designed to provide Construct 2 developers with access to BlackBerry 10 native APIs
-for integration in their Construct 2 games. Currently supported APIs include:
-* **BlackBerry Messenger**
-  * Invite To Download
-* **In-App Payments**
-  * Purchase Digital Good
-  * Get Existing Purchases
-  * Get Digital Good Price
-  * Check If Digital Good Is Purchased
-
-To fully test these APIs, you will need a physical BlackBerry 10 device.
-
-Please report any issues with this plugin through the [Github Issue Tracker](https://github.com/blackberry/Construct2Plugins/issues).
-Any additional feedback can be sent to **Erik Oros** via Twitter ([@WaterlooErik](https://twitter.com/WaterlooErik))
-or email (eoros@blackberry.com).
-
 ## Requirements
 * BlackBerry 10 WebWorks SDK 1.0.4.11.
 * BlackBerry 10 Code Signing Keys.
