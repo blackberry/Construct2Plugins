@@ -1,7 +1,17 @@
 Construct2Plugins
 =================
 
-Native BlackBerry 10 API plugins for Construct 2.
+This plugin is designed to provide Construct 2 developers with access to BlackBerry 10 native APIs
+for integration in their Construct 2 games. Currently supported APIs include:
+* **BlackBerry Messenger**
+  * Invite To Download
+* **In-App Payments**
+  * Purchase Digital Good
+  * Get Existing Purchases
+  * Get Digital Good Price
+  * Check If Digital Good Is Purchased
+
+To fully test these APIs, you will need a physical BlackBerry 10 device.
 
 ## DISCLAIMER
 
