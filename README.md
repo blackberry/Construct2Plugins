@@ -5,6 +5,7 @@ This plugin is designed to provide Construct 2 developers with access to BlackBe
 for integration in their Construct 2 games. Currently supported APIs include:
 * **BlackBerry Messenger**
   * Invite To Download
+  * Set Personal Status Message
 * **In-App Payments**
   * Purchase Digital Good
   * Get Existing Purchases
