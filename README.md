@@ -4,6 +4,7 @@ Construct2Plugins
 This plugin is designed to provide Construct 2 developers with access to BlackBerry 10 native APIs
 for integration in their Construct 2 games. Currently supported APIs include:
 * **BlackBerry Messenger**
+  * Register With BBM Platform
   * Invite To Download
   * Set Personal Status Message
 * **In-App Payments**
