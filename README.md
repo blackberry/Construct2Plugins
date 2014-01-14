@@ -60,7 +60,7 @@ Example:
 
 	`<script src="cordova.js"></script>`
 
-	This should be done immediately before the jQuery and Construct2 <script> elements.
+	This should be done immediately before the jQuery and Construct2 \<script\> elements.
 
 * From the CLI, leverage the webworks commands to test/deploy/release your project.
 
