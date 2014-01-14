@@ -54,13 +54,14 @@ Example:
 * Depending on the BlackBerry functionality you are using, you will need to add the following plugins:
 
 	`webworks plugin add com.blackberry.bbm.platform`
+
 	`webworks plugin add com.blackberry.payment`
 
 * Open **index.html** and import the **cordova.js** script:
 
 	`<script src="cordova.js"></script>`
 
-	This should be done immediately before the jQuery and Construct2 \<script\> elements.
+	*This should be done immediately before the jQuery and Construct2 \<script\> elements.*
 
 * From the CLI, leverage the webworks commands to test/deploy/release your project.
 
