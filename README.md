@@ -36,39 +36,39 @@ Example:
 
 * From the Command-Line Interface (CLI) create a new WebWorks project.
 
-	' webworks create Construct2Test
+	`webworks create Construct2Test`
 
 * Remove all files **except config.xml** from:
 
-	' ...\Construct2Test\www
+	`...\Construct2Test\www`
 
 * Export your project from Construct2 as an **HTML5** project.
 * Copy the exported files to:
 
-	' ...\Construct2Test\www
+	`...\Construct2Test\www`
 
 * From the CLI, navigate to:
 
-	' ...\Construct2Test
+	`...\Construct2Test`
 
 * Depending on the BlackBerry functionality you are using, you will need to add the following plugins:
 
-	' webworks plugin add com.blackberry.bbm.platform
-	' webworks plugin add com.blackberry.payment
+	`webworks plugin add com.blackberry.bbm.platform`
+	`webworks plugin add com.blackberry.payment`
 
 * Open **index.html** and import the **cordova.js** script:
 
-	' <script src="cordova.js"></script>
+	`<script src="cordova.js"></script>`
 
 	This should be done immediately before the jQuery and Construct2 <script> elements.
 
 * From the CLI, leverage the webworks commands to test/deploy/release your project.
 
-	' https://developer.blackberry.com/html5/documentation/beta/building_and_testing.html
+	`https://developer.blackberry.com/html5/documentation/beta/building_and_testing.html`
 
 	Example:
 	
-	' webworks run --devicepass 123456
+	`webworks run --devicepass 123456`
 	
 	*This will build and deploy the project to your device; connected via USB.*
 	
