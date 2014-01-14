@@ -1,6 +1,11 @@
 Construct2Plugins
 =================
 
+## Requirements
+
+* BlackBerry WebWorks SDK 2.0+
+* BlackBerry Device (10.2.1+); for testing.
+
 This plugin is designed to provide Construct 2 developers with access to BlackBerry 10 native APIs
 for integration in their Construct 2 games. Currently supported APIs include:
 * **BlackBerry Messenger**
@@ -27,6 +32,46 @@ Example:
 
 *C:\Program Files\Construct 2\exporters\html5\plugins\blackberry10*
 
+## Usage
+
+* From the Command-Line Interface (CLI) create a new WebWorks project.
+
+	' webworks create Construct2Test
+
+* Remove all files **except config.xml** from:
+
+	' ...\Construct2Test\www
+
+* Export your project from Construct2 as an **HTML5** project.
+* Copy the exported files to:
+
+	' ...\Construct2Test\www
+
+* From the CLI, navigate to:
+
+	' ...\Construct2Test
+
+* Depending on the BlackBerry functionality you are using, you will need to add the following plugins:
+
+	' webworks plugin add com.blackberry.bbm.platform
+	' webworks plugin add com.blackberry.payment
+
+* Open **index.html** and import the **cordova.js** script:
+
+	' <script src="cordova.js"></script>
+
+	This should be done immediately before the jQuery and Construct2 <script> elements.
+
+* From the CLI, leverage the webworks commands to test/deploy/release your project.
+
+	' https://developer.blackberry.com/html5/documentation/beta/building_and_testing.html
+
+	Example:
+	
+	' webworks run --devicepass 123456
+	
+	*This will build and deploy the project to your device; connected via USB.*
+	
 ## CAPX
 
 The CAPX file provided is a full Hello World sample to demonstrate the usage of the plugin. Before opening the CAPX file, you will need to

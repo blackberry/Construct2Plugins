@@ -74,6 +74,7 @@ cr.plugins_.blackberry10 = function (runtime) {
 	function Cnds() {}
 
 	/* Callbacks. */
+	Cnds.prototype.onBlackBerryReady = function () { return true; };
 	Cnds.prototype.onRegisterSuccess = function () { return true; };
 	Cnds.prototype.onSetPersonalMessageSuccess = function () { return true; };
 	Cnds.prototype.onSetPersonalMessageFailure = function () { return true; };
@@ -101,7 +102,7 @@ cr.plugins_.blackberry10 = function (runtime) {
 
 		if (typeof blackberry !== 'undefined') {
 			window.webkitRequestAnimationFrame(function () {
-				blackberry.event.addEventListener('onaccesschanged', function (accessible, status) {
+				document.addEventListener('onaccesschanged', function (accessible, status) {
 					if (status === 'unregistered') {
 						/* http://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid-in-javascript */
 						var foo = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
@@ -121,6 +122,8 @@ cr.plugins_.blackberry10 = function (runtime) {
 					}
 				}, false);
 			});
+		} else {
+			alert('blackberry is undefined.');
 		}
 	};
 

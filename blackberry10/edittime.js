@@ -75,6 +75,9 @@ function GetPluginSettings() {
 //AddNumberParam("Number", "Enter a number to test if positive.");
 //AddCondition(0, cf_none, "Is number positive", "My category", "{0} is positive", "Description for my condition!", "MyCondition");
 
+/* Callbacks: onBlackBerryReady*/
+AddCondition(13368, cf_trigger, "onBlackBerryReady", "Callbacks: BlackBerry Ready", "onBlackBerryReady", "Triggers when the blackberry object is ready to be used.", "onBlackBerryReady");
+
 /* Callbacks: registerBBM */
 AddCondition(13370, cf_trigger, "onRegisterSuccess", "Callbacks: BlackBerry Messenger", "onRegisterSuccess", "Executes associated actions after succeeding to register with BlackBerry Messenger.", "onRegisterSuccess");
 AddCondition(13369, cf_trigger, "onRegisterFailure", "Callbacks: BlackBerry Messenger", "onRegisterFailure", "Executes associated actions after failing to register with BlackBerry Messenger.", "onRegisterFailure");
