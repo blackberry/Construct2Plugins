@@ -13,6 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+ 
 // Scripts in this file are included in both the IDE and runtime, so you only
 // need to write scripts common to both once.
