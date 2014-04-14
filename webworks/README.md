@@ -15,7 +15,8 @@ https://developer.blackberry.com/native/documentation/cascades/device_platform/p
 
 
 Once ready, export your application by navigating:
-**File > Export Project > Web > HTML5 Website**
+
+    File > Export Project > Web > HTML5 Website**
 
 Under **Export Options**
 * Be sure to leave **Minify script** unchecked; even for release versions.
@@ -34,8 +35,7 @@ Execute the following command to create a new project:
 
     C:\webworks> webworks create AAAAAA
 
-Where:
-* AAAAAA refers to the name of your project.
+Where **AAAAAA** refers to the name of your project.
 
 Navigate into the newly created folder. Example:
 
@@ -50,7 +50,7 @@ Next, copy your HTML5 export files into the **www** folder of your newly created
 
     C:\webworks\MyProject\www
 
-Modify your **index.html** to include the following **<script>** element. You will want to place this immediately **before** the closing **<\/head>** tag.
+Modify your **index.html** to include the following **<script>** element. You will want to place this immediately **before** the closing **</head>** tag.
 
         ...
         <script type="text/javascript" src="cordova.js"></script>
